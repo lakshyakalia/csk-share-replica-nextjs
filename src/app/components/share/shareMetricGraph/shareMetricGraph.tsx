@@ -1,3 +1,5 @@
-export default function shareMetricGraph() {
-  return <div>Share Metric Graph</div>;
+import ShareOverview from "../shareOverview/shareOverview";
+
+export default function ShareMetricGraph() {
+  return <div></div>;
 }
