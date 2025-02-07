@@ -1,10 +1,11 @@
 import InterestFormSection from "../../interestForm/interestFormSection/interestFormSection";
-import ShareMetricGraph from "../shareMetricGraph/shareMetricGraph";
+import MetricSection from "../metricSection/metricSection";
+import "./shareMetric.css";
 
 export default function ShareMetric() {
   return (
     <div className="metric-padding flex">
-      <ShareMetricGraph />
+      <MetricSection />
       <InterestFormSection />
     </div>
   );
