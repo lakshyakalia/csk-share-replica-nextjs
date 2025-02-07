@@ -1,0 +1,15 @@
+.main-navbar {
+  z-index: 999999;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: #f9fbf980;
+  border: 1px solid #000;
+  border-bottom: 1px #0000001a;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  padding: 0% 10%;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
