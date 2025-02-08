@@ -4,7 +4,7 @@ import "./shareMetric.css";
 
 export default function ShareMetric() {
   return (
-    <div className="metric-padding flex">
+    <div className="flex">
       <MetricSection />
       <InterestFormSection />
     </div>
