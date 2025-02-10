@@ -1,7 +1,7 @@
 "use client";
 import {
-  BarChart as RechartsBarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -11,14 +11,21 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "January", users: 400 },
-  { name: "February", users: 300 },
-  { name: "March", users: 200 },
-  { name: "April", users: 278 },
-  { name: "May", users: 189 },
-  { name: "June", users: 239 },
-  { name: "July", users: 349 },
+  { name: "Oct", share: 218 },
+  { name: "Nov", share: 210 },
+  { name: "Dec", share: 196 },
+  { name: "Jan", share: 188 },
 ];
+
+const shareValues: number[] = data.map((entry) => entry.share);
+const minValue: number = Math.min(...shareValues);
+const maxValue: number = Math.max(...shareValues);
+
+const dataRange = maxValue - minValue;
+const buffer = dataRange < 20 ? 10 : Math.floor(dataRange * 0.1);
+
+const roundedMin: number = Math.floor((minValue - buffer) / 5) * 5;
+const roundedMax: number = Math.ceil((maxValue + buffer) / 5) * 5;
 
 export default function ShareMetricGraph() {
   return (
@@ -30,26 +37,27 @@ export default function ShareMetricGraph() {
           fontSize: "30px",
           marginBottom: "20px",
         }}
-      >
-        Bar Chart
-      </div>
+      ></div>
       <ResponsiveContainer width="100%" height="100%">
-        <RechartsBarChart
+        <LineChart
           data={data}
           margin={{
             top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="0 0" />
           <XAxis dataKey="name" />
-          <YAxis />
+          <YAxis domain={[roundedMin, roundedMax]} />
           <Tooltip />
           <Legend />
-          <Bar dataKey="users" fill="#8884d8" />
-        </RechartsBarChart>
+          <Line
+            type="monotone"
+            dataKey="share"
+            stroke="#34c759"
+            strokeWidth={2}
+            dot={{ r: 5 }}
+          />
+        </LineChart>
       </ResponsiveContainer>
     </div>
   );
