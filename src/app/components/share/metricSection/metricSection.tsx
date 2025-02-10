@@ -10,7 +10,7 @@ import "./metricSection.css";
 import { useEffect, useState } from "react";
 
 export default function MetricSection() {
-  const [shareData, setShareData] = useState([]);
+  const [shareData, setShareData] = useState({});
 
   useEffect(() => {
     fetch("/api/getInitialData")
@@ -24,7 +24,7 @@ export default function MetricSection() {
       <ShareOverview />
       <ShareMetricGraph />
       <AboutShare />
-      <FundamentalGrid />
+      <FundamentalGrid data={shareData.Fundamentals || []} />
       <FinancialGrid />
       <ShareholdingGrid />
       <PromoterGrid />

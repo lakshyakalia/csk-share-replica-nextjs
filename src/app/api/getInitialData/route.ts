@@ -10,10 +10,19 @@ export const GET = () => {
     const fileBuffer = fs.readFileSync(filePath);
 
     const workbook = XLSX.read(fileBuffer, { type: "buffer" });
-    const sheetName = workbook.SheetNames[1];
-    const worksheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
-    return new NextResponse(JSON.stringify(worksheet), { status: 200 });
+    const allSheetsData: { [key: string]: any[] } = {};
+
+    workbook.SheetNames.forEach((sheetName) => {
+      const worksheet = workbook.Sheets[sheetName];
+      const jsonData = XLSX.utils.sheet_to_json(worksheet);
+      allSheetsData[sheetName] = jsonData;
+    });
+
+    // const sheetName = workbook.SheetNames[0];
+    // const worksheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+
+    return new NextResponse(JSON.stringify(allSheetsData), { status: 200 });
     // res.status(200).json(worksheet);
   } catch (err) {
     // console.error("Error reading Excel file:", err);
