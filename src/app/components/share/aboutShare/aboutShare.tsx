@@ -26,7 +26,7 @@ export default function AboutShare() {
           The Super Kings was suspended for two years from the IPL starting July
           2015 due to the involvement of its owners in the 2013 IPL betting
           case. The frachise re-joined the IPL for the 2018 season and won the
-          title in its comeback season. In January 2022, CSK became India's
+          title in its comeback season. In January 2022, CSK became India&apos;s
           first unicorn sports enterprise. As of 2022, it was the second most
           valuable IPL franchise with a valuation of $1.15 billion.
         </p>

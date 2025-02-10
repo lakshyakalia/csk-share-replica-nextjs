@@ -17,7 +17,7 @@ export const GET = () => {
     // res.status(200).json(worksheet);
   } catch (err) {
     // console.error("Error reading Excel file:", err);
-    return new NextResponse(JSON.stringify("Error reading Excel file:"), {
+    return new NextResponse(JSON.stringify("Error reading Excel file:" + err), {
       status: 500,
     });
     // res.status(500).json({ error: "Failed to load data" });
