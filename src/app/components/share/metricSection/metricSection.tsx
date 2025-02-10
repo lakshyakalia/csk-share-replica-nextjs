@@ -25,7 +25,7 @@ export default function MetricSection() {
       <ShareMetricGraph />
       <AboutShare />
       <FundamentalGrid data={shareData.Fundamentals || []} />
-      <FinancialGrid />
+      <FinancialGrid data={shareData || {}} />
       <ShareholdingGrid data={shareData.Shareholding_Pattern || []} />
       <PromoterGrid data={shareData.Promoters_or_Management || []} />
       {/* <div>

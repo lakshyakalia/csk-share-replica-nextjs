@@ -7,9 +7,20 @@
   border-bottom: 1px #0000001a;
   justify-content: center;
   align-items: center;
-  min-height: 6rem;
+  /* min-height: 6rem; */
   padding: 0% 10%;
-  display: flex;
+  /* display: flex; */
   position: sticky;
   top: 0;
+}
+.logo-img {
+  width: 16rem;
+}
+.unclickable-links a {
+  margin-right: 20px;
+  color: #757575;
+  font-weight: 500;
+}
+.links-container {
+  align-content: center;
 }

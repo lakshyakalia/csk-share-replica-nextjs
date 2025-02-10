@@ -11,3 +11,9 @@
   font-size: 1rem;
   font-weight: 400;
 }
+
+.grid-table td {
+  color: #181818;
+  font-size: 1rem;
+  font-weight: 500;
+}
