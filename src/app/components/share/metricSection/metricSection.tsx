@@ -26,12 +26,12 @@ export default function MetricSection() {
       <AboutShare />
       <FundamentalGrid data={shareData.Fundamentals || []} />
       <FinancialGrid />
-      <ShareholdingGrid />
-      <PromoterGrid />
-      <div>
+      <ShareholdingGrid data={shareData.Shareholding_Pattern || []} />
+      <PromoterGrid data={shareData.Promoters_or_Management || []} />
+      {/* <div>
         <h1>CSK Share Data</h1>
         <pre>{JSON.stringify(shareData, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 }

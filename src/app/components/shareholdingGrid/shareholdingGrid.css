@@ -1,0 +1,13 @@
+.grid-table tr {
+  border: 1px solid #0000001a;
+  border-radius: 10px;
+}
+.grid-table tr:nth-child(1) {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.grid-table th {
+  color: #757575;
+  font-size: 1rem;
+  font-weight: 400;
+}
