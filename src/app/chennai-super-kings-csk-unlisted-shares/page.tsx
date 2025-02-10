@@ -1,3 +1,4 @@
+import Faq from "../components/faq/faq";
 import MoreDetail from "../components/share/moreDetail/moreDetail";
 import ShareHeader from "../components/share/shareHeader/shareHeader";
 import ShareMetric from "../components/share/shareMetric/shareMetric";
@@ -11,6 +12,7 @@ export default function Share() {
         <ShareMetric />
         <MoreDetail />
       </div>
+      <Faq />
     </div>
   );
 }
