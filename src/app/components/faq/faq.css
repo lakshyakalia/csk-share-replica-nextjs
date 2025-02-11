@@ -1,5 +1,7 @@
 .faq-container {
+  padding: 10%;
   padding-top: 0 !important;
+  padding-bottom: 4%;
 }
 
 .faq-title {

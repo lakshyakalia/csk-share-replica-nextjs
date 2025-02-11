@@ -2,7 +2,7 @@ import "./moreDetail.css";
 
 export default function MoreDetail() {
   return (
-    <div>
+    <div className="more-detail-container">
       <div>
         <div>
           <h3 className="my-6">
@@ -36,13 +36,13 @@ export default function MoreDetail() {
         </div>
         <div className="text-base">
           <p className="my-6">
-            Chennai Super Kings was established in 2008, and since then, the
-            team has been one of the most successful franchises in IPL history.
-            Led by the iconic MS Dhoni, CSK has not only gained immense
-            popularity but also accumulated several prestigious titles. With its
-            consistent on-field performances and successful business ventures
-            off the field, CSK has managed to become one of the most valuable
-            IPL teams.
+            <strong>Chennai Super Kings</strong> was established in 2008, and
+            since then, the team has been one of the most successful franchises
+            in IPL history. Led by the iconic MS Dhoni, CSK has not only gained
+            immense popularity but also accumulated several prestigious titles.
+            With its consistent on-field performances and successful business
+            ventures off the field, CSK has managed to become one of the most
+            valuable IPL teams.
           </p>
         </div>
       </div>
@@ -53,14 +53,26 @@ export default function MoreDetail() {
         <div className="text-base">
           {/* <p className="my-6"> */}
           <ul>
-            <li>Founded: 2008</li>
-            <li>IPL Titles: 4 (2010, 2011, 2018, 2021)</li>
-            <li>Owner: Chennai Super Kings Cricket Ltd.</li>
-            <li>Home Ground: M. A. Chidambaram Stadium (Chennai)</li>
-            <li>Brand Value: Over ₹700 Crores (as per the latest estimates)</li>
             <li>
-              Fanbase: Among the largest in IPL, CSK boasts millions of loyal
-              fans, making it one of the most-followed IPL teams.
+              <strong>Founded:</strong> 2008
+            </li>
+            <li>
+              <strong>IPL Titles:</strong> 4 (2010, 2011, 2018, 2021)
+            </li>
+            <li>
+              <strong>Owner:</strong> Chennai Super Kings Cricket Ltd.
+            </li>
+            <li>
+              <strong>Home Ground:</strong> M. A. Chidambaram Stadium (Chennai)
+            </li>
+            <li>
+              <strong>Brand Value:</strong> Over ₹700 Crores (as per the latest
+              estimates)
+            </li>
+            <li>
+              <strong>Fanbase:</strong> Among the largest in IPL, CSK boasts
+              millions of loyal fans, making it one of the most-followed IPL
+              teams.
             </li>
           </ul>
           {/* </p> */}
@@ -100,37 +112,39 @@ export default function MoreDetail() {
             Investing in Chennai Super Kings unlisted shares offers several
             compelling advantages:
           </p>
-          <ol>
+          <ol className="ol-num">
             <li>
-              Strong Brand and Fan Loyalty: CSK’s brand is strong, with one of
-              the largest and most loyal fanbases in the IPL. The team&apos;s
-              enduring popularity and market presence make it a highly
-              attractive proposition for investors looking to capitalize on this
-              growing brand.
+              <strong>Strong Brand and Fan Loyalty:</strong> CSK’s brand is
+              strong, with one of the largest and most loyal fanbases in the
+              IPL. The team&apos;s enduring popularity and market presence make
+              it a highly attractive proposition for investors looking to
+              capitalize on this growing brand.
             </li>
             <li>
-              Consistent Performance: Over the years, CSK has consistently
-              delivered excellent performances on the field. With 4 IPL titles
-              and multiple top finishes in the IPL standings, the team’s
-              financial health remains robust, making their shares valuable.
+              <strong>Consistent Performance:</strong> Over the years, CSK has
+              consistently delivered excellent performances on the field. With 4
+              IPL titles and multiple top finishes in the IPL standings, the
+              team’s financial health remains robust, making their shares
+              valuable.
             </li>
             <li>
-              Revenue Growth: CSK generates revenue from multiple sources,
-              including media rights, sponsorships, merchandise sales, and more.
-              This financial stability adds value to its unlisted shares.
+              <strong>Revenue Growth:</strong> CSK generates revenue from
+              multiple sources, including media rights, sponsorships,
+              merchandise sales, and more. This financial stability adds value
+              to its unlisted shares.
             </li>
             <li>
-              Future Growth Potential: As IPL continues to grow in popularity
-              and global viewership, the value of CSK is expected to rise,
-              enhancing the Chennai Super Kings share price in the unlisted
-              market. This makes CSK unlisted shares a promising long-term
-              investment.
+              <strong>Future Growth Potential:</strong> As IPL continues to grow
+              in popularity and global viewership, the value of CSK is expected
+              to rise, enhancing the Chennai Super Kings share price in the
+              unlisted market. This makes CSK unlisted shares a promising
+              long-term investment.
             </li>
             <li>
-              Diversification: Investing in Chennai Super Kings unlisted shares
-              gives you exposure to the sports and entertainment sector,
-              diversifying your portfolio and mitigating risks associated with
-              other sectors.
+              <strong>Diversification:</strong> Investing in Chennai Super Kings
+              unlisted shares gives you exposure to the sports and entertainment
+              sector, diversifying your portfolio and mitigating risks
+              associated with other sectors.
             </li>
           </ol>
         </div>
@@ -138,16 +152,16 @@ export default function MoreDetail() {
       <div>
         <div>
           <h3 className="my-6">
-            Chennai Super Kings Unlisted Share Price: Latest
+            Chennai Super Kings Unlisted Share Price: Latest Updates
           </h3>
         </div>
         <div className="text-base">
           <p className="my-6">
-            UpdatesThe Chennai Super Kings unlisted share price fluctuates based
-            on various factors such as team performance, financial health,
-            market demand, and future projections. CSK has consistently
-            maintained a strong position both on and off the field, which
-            positively influences the Chennai Super Kings share price.
+            The Chennai Super Kings unlisted share price fluctuates based on
+            various factors such as team performance, financial health, market
+            demand, and future projections. CSK has consistently maintained a
+            strong position both on and off the field, which positively
+            influences the Chennai Super Kings share price.
           </p>
         </div>
       </div>
@@ -162,21 +176,22 @@ export default function MoreDetail() {
             depending on market conditions. This price is subject to change
             based on factors such as:
           </p>
-          <ol>
+          <ol className="ol-disc">
             <li>
-              Team Performance: Winning IPL titles or making strong playoff
-              performances enhances the brand&apos;s value, which drives up
-              share prices.
+              <strong>Team Performance:</strong> Winning IPL titles or making
+              strong playoff performances enhances the brand&apos;s value, which
+              drives up share prices.
             </li>
             <li>
-              Sponsorship and Media Deals: CSK’s ongoing sponsorship deals and
-              media rights agreements contribute significantly to its revenue,
-              which impacts the Chennai Super Kings unlisted share price.
+              <strong>Sponsorship and Media Deals:</strong> CSK’s ongoing
+              sponsorship deals and media rights agreements contribute
+              significantly to its revenue, which impacts the Chennai Super
+              Kings unlisted share price.
             </li>
             <li>
-              Market Sentiment: Investor confidence in CSK’s performance and
-              future prospects plays a major role in determining the price of
-              CSK shares.
+              <strong>Market Sentiment:</strong> Investor confidence in CSK’s
+              performance and future prospects plays a major role in determining
+              the price of CSK shares.
             </li>
           </ol>
           <p className="my-6">
@@ -198,7 +213,7 @@ export default function MoreDetail() {
             ‍Investing in Chennai Super Kings unlisted shares can be a rewarding
             experience. Here&apos;s how you can go about it:
           </p>
-          <ol>
+          <ol className="no-left-margin ol-num">
             <li>
               Register on a Trusted PlatformTo buy Chennai Super Kings unlisted
               shares, first, you need to sign up on a trusted unlisted share
@@ -237,10 +252,13 @@ export default function MoreDetail() {
         </div>
         <div className="text-base">
           <p className="my-6">
-            ‍If you already own Chennai Super Kings unlisted shares and wish to
-            sell them, follow these steps:
+            ‍
+            <strong>
+              If you already own Chennai Super Kings unlisted shares and wish to
+              sell them, follow these steps:
+            </strong>
           </p>
-          <ol>
+          <ol className="no-left-margin ol-num">
             <li>
               ‍List Your Shares on the PlatformTo sell your CSK shares, list
               them on a trusted unlisted share trading platform like
@@ -270,11 +288,13 @@ export default function MoreDetail() {
         </div>
         <div className="text-base">
           <p className="my-6">
-            While investing in Chennai Super Kings unlisted shares presents a
-            lucrative opportunity, there are certain risks and considerations to
-            keep in mind:
+            <strong>
+              While investing in Chennai Super Kings unlisted shares presents a
+              lucrative opportunity, there are certain risks and considerations
+              to keep in mind:
+            </strong>
           </p>
-          <ol>
+          <ol className="no-left-margin ol-num">
             <li>
               Liquidity Risk Unlike publicly traded stocks, Chennai Super Kings
               unlisted shares are less liquid. You may have to wait for a buyer

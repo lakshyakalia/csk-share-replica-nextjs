@@ -46,8 +46,8 @@ export default function FinancialGrid({ data }: { data: FinancialData }) {
         Financials <span>(In Cr)</span>
       </div>
       <div>
-        <div className="flex tabs-menu">
-          <div className="tabs-container">
+        <div className="flex tabs-menu finance-menu">
+          <div className="tabs-container tabs-content">
             <div
               className={`tab ${
                 activeTab === "income_statement" ? "active-tab" : ""
