@@ -23,7 +23,7 @@ export interface LiabilitiesData {
 }
 
 export interface CashFlowData {
-  [year: number]: number | string | undefined;
+  [year: string]: string | number;
   Category: string;
 }
 
