@@ -27,9 +27,14 @@ interface CashFlowData {
   Category: string;
 }
 
+interface FinancialRatiosData {
+  [year: number]: number | string | undefined;
+  Ratios: string;
+}
+
 interface FinancialData {
   Financials_Income_Statement?: IncomeStatementData[];
-  Financial_Ratios?: Record<string, any>[];
+  Financial_Ratios?: FinancialRatiosData[];
   Financials_Balance_Sheet?: BalanceSheetData[];
   Financial_Liabilities?: LiabilitiesData[];
   Financial_Cash_Flow?: CashFlowData[];
