@@ -4,3 +4,21 @@
 .gap {
   gap: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .reverse-flex {
+    flex-direction: column-reverse;
+  }
+  .more-detail-container {
+    width: auto;
+  }
+  .unclickable-links {
+    display: none;
+  }
+  .interest-container {
+    width: auto;
+  }
+  .finance-menu {
+    overflow-x: scroll;
+  }
+}
