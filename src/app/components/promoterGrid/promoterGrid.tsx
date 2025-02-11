@@ -1,4 +1,10 @@
-export default function PromoterGrid({ data }) {
+import { Promoter_Or_Management } from "../share/metricSection/metricSection";
+
+interface PromoterProps {
+  data: Promoter_Or_Management[];
+}
+
+export default function PromoterGrid({ data }: PromoterProps) {
   return (
     <div>
       <div className="h3">Promoters or Management</div>

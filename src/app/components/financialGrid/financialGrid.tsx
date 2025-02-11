@@ -4,6 +4,7 @@ import "./financialGrid.css";
 import IncomeStatement from "./incomeStatement/incomeStatement";
 import CashFlow from "./cashFlow/cashFlow";
 import BalanceSheet from "./balanceSheet/balanceSheet";
+import { FinancialData } from "../share/metricSection/metricSection";
 
 type TabType = "income_statement" | "balance_statement" | "cash_flow";
 
@@ -30,14 +31,6 @@ export interface CashFlowData {
 export interface FinancialRatiosData {
   [year: string]: number | string;
   Ratios: string;
-}
-
-interface FinancialData {
-  Financials_Income_Statement?: IncomeStatementData[];
-  Financial_Ratios?: FinancialRatiosData[];
-  Financials_Balance_Sheet?: BalanceSheetData[];
-  Financial_Liabilities?: LiabilitiesData[];
-  Financial_Cash_Flow?: CashFlowData[];
 }
 
 export default function FinancialGrid({ data }: { data: FinancialData }) {

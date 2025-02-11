@@ -1,7 +1,11 @@
+import { Shareholding_Pattern } from "../share/metricSection/metricSection";
 import "./shareholdingGrid.css";
 
-export default function ShareholdingGrid({ data }) {
-  // Extract the years from the first data entry, ignoring the 'Shareholders' key
+interface ShareholdingProps {
+  data: Shareholding_Pattern[];
+}
+
+export default function ShareholdingGrid({ data }: ShareholdingProps) {
   const years = data[0]
     ? Object.keys(data[0]).filter((key) => key !== "Shareholders")
     : [];

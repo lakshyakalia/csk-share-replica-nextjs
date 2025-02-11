@@ -1,4 +1,10 @@
-export default function FundamentalGrid({ data }) {
+import { Fundamentals } from "../share/metricSection/metricSection";
+
+interface FundamentalProps {
+  data: Fundamentals[];
+}
+
+export default function FundamentalGrid({ data }: FundamentalProps) {
   if (!data || data.length === 0) {
     return <p>No fundamental data available.</p>;
   }
