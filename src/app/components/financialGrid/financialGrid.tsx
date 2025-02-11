@@ -5,10 +5,20 @@ import IncomeStatement from "./incomeStatement/incomeStatement";
 import CashFlow from "./cashFlow/cashFlow";
 import BalanceSheet from "./balanceSheet/balanceSheet";
 
-export default function FinancialGrid({ data }) {
-  const [activeTab, setActiveTab] = useState("income_statement");
+type TabType = "income_statement" | "balance_statement" | "cash_flow";
 
-  const handleTabClick = (tab: any) => {
+interface FinancialData {
+  Financials_Income_Statement?: any[];
+  Financial_Ratios?: any[];
+  Financials_Balance_Sheet?: any[];
+  Financial_Liabilities?: any[];
+  Financial_Cash_Flow?: any[];
+}
+
+export default function FinancialGrid({ data }: { data: FinancialData }) {
+  const [activeTab, setActiveTab] = useState<TabType>("income_statement");
+
+  const handleTabClick = (tab: TabType) => {
     setActiveTab(tab);
   };
 
