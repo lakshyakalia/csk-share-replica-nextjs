@@ -57,7 +57,7 @@ const dataQA = [
 export default function Faq() {
   return (
     <div className="faq-container metric-padding text-center">
-      <div className="faq-title">FAQ's</div>
+      <div className="faq-title">FAQ&apos;s</div>
       <div className="faq-list-container my-20">
         {dataQA.map((data, i) => (
           <div className="qa-container" key={i}>
