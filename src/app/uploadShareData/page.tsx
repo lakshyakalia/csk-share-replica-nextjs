@@ -3,13 +3,15 @@ import { useState } from "react";
 import "./uploadShareData.css";
 
 export default function Home() {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState<File | null>(null);
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      setFile(e.target.files[0]);
+    }
   };
 
-  const handleUpload = async (e) => {
+  const handleUpload = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!file) return alert("Please select a file to upload");
 
