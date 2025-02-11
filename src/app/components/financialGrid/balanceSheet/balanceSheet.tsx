@@ -1,7 +1,6 @@
 import React from "react";
 import { BalanceSheetData, LiabilitiesData } from "../financialGrid";
 
-// Define prop types for the component
 interface BalanceSheetProps {
   assetsData: BalanceSheetData[];
   liabilitiesData: LiabilitiesData[];

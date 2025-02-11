@@ -7,27 +7,27 @@ import BalanceSheet from "./balanceSheet/balanceSheet";
 
 type TabType = "income_statement" | "balance_statement" | "cash_flow";
 
-interface IncomeStatementData {
+export interface IncomeStatementData {
   [year: number]: number | string;
   Category: string;
 }
 
 export interface BalanceSheetData {
-  [year: number]: number | undefined;
+  [year: string]: string | number;
   Assets: string;
 }
 
 export interface LiabilitiesData {
-  [year: number]: number | string | undefined;
+  [year: string]: string | number;
   Liabilities: string;
 }
 
-interface CashFlowData {
+export interface CashFlowData {
   [year: number]: number | string | undefined;
   Category: string;
 }
 
-interface FinancialRatiosData {
+export interface FinancialRatiosData {
   [year: number]: number | string | undefined;
   Ratios: string;
 }
