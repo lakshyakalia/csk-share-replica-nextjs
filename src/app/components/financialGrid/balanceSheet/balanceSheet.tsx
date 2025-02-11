@@ -1,4 +1,16 @@
-export default function BalanceSheet({ assetsData, liabilitiesData }) {
+import React from "react";
+import { BalanceSheetData, LiabilitiesData } from "../financialGrid";
+
+// Define prop types for the component
+interface BalanceSheetProps {
+  assetsData: BalanceSheetData[];
+  liabilitiesData: LiabilitiesData[];
+}
+
+export default function BalanceSheet({
+  assetsData,
+  liabilitiesData,
+}: BalanceSheetProps) {
   if (
     (!assetsData || assetsData.length === 0) &&
     (!liabilitiesData || liabilitiesData.length === 0)
@@ -6,7 +18,6 @@ export default function BalanceSheet({ assetsData, liabilitiesData }) {
     return <p>No data available</p>;
   }
 
-  // Extract years from the assetsData and liabilitiesData
   const incomeYears =
     assetsData.length > 0
       ? Object.keys(assetsData[0]).filter((key) => key !== "Assets")
@@ -19,8 +30,7 @@ export default function BalanceSheet({ assetsData, liabilitiesData }) {
 
   return (
     <div>
-      {/* Income Statement Table */}
-      {/* <h2 className="text-xl font-bold my-4">P&L Statement</h2> */}
+      {/* Assets Table */}
       <table className="grid-table mb-8">
         <thead>
           <tr>
@@ -47,7 +57,6 @@ export default function BalanceSheet({ assetsData, liabilitiesData }) {
       </table>
 
       {/* Liabilities Table */}
-      {/* <h2 className="text-xl font-bold my-4">Financial Liabilities</h2> */}
       <table className="grid-table">
         <thead>
           <tr>

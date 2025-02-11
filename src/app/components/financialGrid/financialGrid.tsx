@@ -12,12 +12,12 @@ interface IncomeStatementData {
   Category: string;
 }
 
-interface BalanceSheetData {
+export interface BalanceSheetData {
   [year: number]: number | undefined;
   Assets: string;
 }
 
-interface LiabilitiesData {
+export interface LiabilitiesData {
   [year: number]: number | string | undefined;
   Liabilities: string;
 }
