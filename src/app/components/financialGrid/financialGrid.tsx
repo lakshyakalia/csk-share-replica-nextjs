@@ -7,12 +7,32 @@ import BalanceSheet from "./balanceSheet/balanceSheet";
 
 type TabType = "income_statement" | "balance_statement" | "cash_flow";
 
+interface IncomeStatementData {
+  [year: number]: number | string;
+  Category: string;
+}
+
+interface BalanceSheetData {
+  [year: number]: number | undefined;
+  Assets: string;
+}
+
+interface LiabilitiesData {
+  [year: number]: number | string | undefined;
+  Liabilities: string;
+}
+
+interface CashFlowData {
+  [year: number]: number | string | undefined;
+  Category: string;
+}
+
 interface FinancialData {
-  Financials_Income_Statement?: any[];
-  Financial_Ratios?: any[];
-  Financials_Balance_Sheet?: any[];
-  Financial_Liabilities?: any[];
-  Financial_Cash_Flow?: any[];
+  Financials_Income_Statement?: IncomeStatementData[];
+  Financial_Ratios?: Record<string, any>[];
+  Financials_Balance_Sheet?: BalanceSheetData[];
+  Financial_Liabilities?: LiabilitiesData[];
+  Financial_Cash_Flow?: CashFlowData[];
 }
 
 export default function FinancialGrid({ data }: { data: FinancialData }) {
