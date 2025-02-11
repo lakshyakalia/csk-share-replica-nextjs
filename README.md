@@ -56,6 +56,10 @@ Ensure you have the following installed:
    # or
    yarn dev
    ```
-   The application will be available at `http://localhost:3000/chennai-super-kings-csk-unlisted-shares`.
-   Upload Form: `http://localhost:3000/uploadShareData`.
-   Google Sheet Link: `https://docs.google.com/spreadsheets/d/174dBB4CpvpbheJtpu6XXCfZmbpERe_znNNLFEyOZk9k/edit?usp=sharing`
+   The application/CSK Share Page will be available at [http://localhost:3000/chennai-super-kings-csk-unlisted-shares](http://localhost:3000/chennai-super-kings-csk-unlisted-shares).
+   
+   Upload Form: [http://localhost:3000/uploadShareData](http://localhost:3000/uploadShareData).
+   
+   Google Sheet Link: [https://docs.google.com/spreadsheets/d/174dBB4CpvpbheJtpu6XXCfZmbpERe_znNNLFEyOZk9k/edit?usp=sharing](https://docs.google.com/spreadsheets/d/174dBB4CpvpbheJtpu6XXCfZmbpERe_znNNLFEyOZk9k/edit?usp=sharing).
+
+   Sample Excel File: [https://github.com/lakshyakalia/csk-share-replica-nextjs/blob/main/public/assets/csk_initial_data.xlsx](https://github.com/lakshyakalia/csk-share-replica-nextjs/blob/main/public/assets/csk_initial_data.xlsx).
