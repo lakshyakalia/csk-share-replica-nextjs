@@ -1,8 +1,13 @@
-export default function FinancialOverview({ incomeData, ratiosData }) {
-  console.log("Income Data:", incomeData);
-  console.log("Ratios Data:", ratiosData);
-  // console.log("Income Years:", incomeYears);
-  // console.log("Ratios Years:", ratiosYears);
+import { FinancialRatiosData, IncomeStatementData } from "../financialGrid";
+
+interface FinancialOverviewProps {
+  incomeData: IncomeStatementData[];
+  ratiosData: FinancialRatiosData[];
+}
+export default function FinancialOverview({
+  incomeData,
+  ratiosData,
+}: FinancialOverviewProps) {
   if (
     (!incomeData || incomeData.length === 0) &&
     (!ratiosData || ratiosData.length === 0)
@@ -10,7 +15,6 @@ export default function FinancialOverview({ incomeData, ratiosData }) {
     return <p>No data available</p>;
   }
 
-  // Extract years from the incomeData and liabilitiesData
   const incomeYears =
     incomeData.length > 0
       ? Object.keys(incomeData[0]).filter((key) => key !== "Category")

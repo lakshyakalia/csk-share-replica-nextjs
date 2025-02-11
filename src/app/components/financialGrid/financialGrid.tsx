@@ -8,7 +8,7 @@ import BalanceSheet from "./balanceSheet/balanceSheet";
 type TabType = "income_statement" | "balance_statement" | "cash_flow";
 
 export interface IncomeStatementData {
-  [year: number]: number | string;
+  [year: string]: number | string;
   Category: string;
 }
 
@@ -28,7 +28,7 @@ export interface CashFlowData {
 }
 
 export interface FinancialRatiosData {
-  [year: number]: number | string | undefined;
+  [year: string]: number | string;
   Ratios: string;
 }
 
