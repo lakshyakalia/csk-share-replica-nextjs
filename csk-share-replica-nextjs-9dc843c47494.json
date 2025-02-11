@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "csk-share-replica-nextjs",
+  "private_key_id": "9dc843c47494b7476c75e232b87b7dea31f67802",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCodB84AX2LU4lt\nZy5P3we8b4C1rc+B5d+3OLKBgZtL/p8MRBzlIMspxAimBWFMtCHSbYSoAFmNyRpY\nyBfwnNJSKckJRIr/D7SZNQnpBQvYxMjf+CzVEzBDhlesFwdd2ZPW44DOq7nprBx+\ns40YqrQL3O/zQJ75FBbrmg9AIEz83o07dm6PVA9y94WicKQLCEkWZAldWvHrrpCe\nRdqPfzV/VGEuipL+bW7VmSMcJhpBgUnH2Sic0zfQ7+eUBfy5aI8KmlQsK4nVTjei\nJgQKm82Q3ycZBI5syrcTRfgYyuhKWKPbtzEfwSNVqzZDd6KgP20tLL8TPMHuLsFI\nMNA4a8rTAgMBAAECggEATeAdHJ2nxfTxGAg240rWvzkHFjaLs2Arm/8UmwVpX2kP\nazLD7vNJqP3NB799+2FdL3Rc+vPqcr9RNFEQrDY7jyttGqE65u6CTb+03KpuDyDu\nQohvZXPxAI6HUnH1AGCZVaMoRaMjGBFuvO5R4ODtynwx29F4jOrKK9I1ka49GTsj\nfgSirXPkw7gPd4k3U5Fc5mijhCX2K0L6CEtQwjhAkjI8MQ4GcM5e0047wdplUAmZ\n9uoNF8mtIOjl7q2KYEhk+PH8UqcmaGRtzB4VZ/Eg3+ZSSj9kr8dlM0RZDADRpfhD\nGji66YtuEZ+fC4HDR4czs3BF48Koc1Mu1HzAsoHKXQKBgQDYubfoqtmHtnZpZN+H\nx4q5eJsVkiBjJQ1dw7OvbQ832VPDG8skHW38IdPD+dsdkqDO0JrHTWE66t0SBtrG\nlRfzzGU/ygVFEDmT6fJHdMDmkfW0nmmtuBmTEC14+1xqYkIaN0MA5ck62+97Fvv6\n5f2NMjJo6aTm+W2igiKpskO6XwKBgQDG+vxSQbBsfWaBX0u9ptatuELjZ08SDfa1\nsmczvorr2H+eiAI6DtnTSqu9SVZC9WFtxHl2pqi+8ABmC+Hw2lY7TdS12DLBrMKP\nH5ZksFTZAMk6O+UplxJG20xFzqUd6K4lriNxhJiYqA5r0Z0yi/8JgBAHKtw268i4\nIaOgI+0sDQKBgFfoZQ+sFVY2DavMbdrudneq0wUZ46czhUtuMTlL/GtD7PTsFicN\nBOrLcdFBTL6fFjktZkrHOVQjpg5E14LLQQ7z7nHEaQTNgv1bXJndYs1jkQ11YBpF\n3aHIYxl6o87HElb96WC41DnasjX0absohQM7xDTH6MqDjBPpw1Of6lbzAoGBAMAx\nCuhUpJiVox3QsvKzJGZVNN47Geehbyte70nOgJZ+3f1891GmqITqeelx3Yz9QCbr\nADs3jIQoguoODiU6btIHQi6GbbgeKypc40HMA5g6pyLFWXqLfc7M4OYIS/oQlay1\nf2yVG2NP5+YCaCi7ihJeDJ0vq9asdYpMi6QRL3M9AoGBAKu88USoXQ36vKE0jOeU\nZTUpG/d3FUO5EVEOvF/iAiwuhApL1eOCEKYmqgLhS3TM4llyPlYxH/NqekuhTfYs\ny15/kZNQ1fIT3dBUR9YGjvN5vy4/22w7NT2cACYQ1lbQB5yzKu8JHyUmxFbAGD/Q\n/xcysJ5fitgTko1aYHdx5esZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@csk-share-replica-nextjs.iam.gserviceaccount.com",
+  "client_id": "102028338976479726984",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40csk-share-replica-nextjs.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
